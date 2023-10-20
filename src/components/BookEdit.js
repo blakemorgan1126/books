@@ -7,6 +7,7 @@ function BookEdit({book,onSubmit}){
 
     const handleChange = (event) => {
         setTitle(event.target.value);
+        console.log("hungry");
     }
 
     const handleSubmit = (event) => {
