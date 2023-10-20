@@ -10,7 +10,7 @@ function Provider({ children }){
        const response = await axios.get('http://localhost:3001/books');
 
         setBooks(response.data);
-    }
+    };
 
     const deleteBookById = async (id) => {
         await axios.delete(`http://localhost:3001/books/${id}`);
